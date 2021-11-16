@@ -87,7 +87,7 @@ html {
     display: none;
     position: absolute;
     background-color: rgba(255, 255, 255, 0.1);
-    min-width: 230px;
+    min-width: 300px;
 }
 
 #nav li:hover .subnav-one,
@@ -191,6 +191,10 @@ html {
 #nav .subnav-three-three>li:hover>a {
     background-color: rgba(255, 255, 255, 0.1);
     font-size: 17px;
+}
+
+#nav .add-min-width>li:hover>a {
+    min-width: 300px;
 }
 
 

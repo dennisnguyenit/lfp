@@ -97,8 +97,8 @@ html {
 
 #nav .subnav-one li:hover a,
 #nav .subnav-two li:hover a {
-    background-color: #ddd;
-    color: #000;
+    background-color: rgba(255, 255, 255, 0.1);
+    font-size: 17px;
 }
 
 
@@ -119,8 +119,8 @@ html {
 }
 
 #nav .subnav-three>li:hover>a {
-    background-color: #ddd;
-    color: #000;
+    background-color: rgba(255, 255, 255, 0.1);
+    font-size: 17px;
 }
 
 .arrow-right {
@@ -189,8 +189,8 @@ html {
 #nav .subnav-three-two>li:hover>a,
 #nav .subnav-three-two-one>li:hover>a,
 #nav .subnav-three-three>li:hover>a {
-    background-color: #ddd;
-    color: #000;
+    background-color: rgba(255, 255, 255, 0.1);
+    font-size: 17px;
 }
 
 

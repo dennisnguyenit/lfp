@@ -1,0 +1,737 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;500&display=swap');
+body {
+    line-height: 1.5;
+}
+
+
+/* Reset CSS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Sora', sans-serif;
+    font-weight: lighter;
+}
+
+
+/* #main {} */
+
+#header {
+    height: 100px;
+    background-color: #135029;
+    /* position: fixed;
+    left: 0;
+    right: 0;
+    top: 0; */
+}
+
+#header:hover,
+#nav .image-logo:hover {
+    height: 300px;
+    width: 100%;
+    background-color: #135029;
+}
+
+#nav {
+    text-transform: uppercase;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 14px;
+}
+
+#nav .logo {
+    float: right;
+}
+
+#nav,
+.subnav-one,
+.subnav-two,
+.subnav-three,
+.subnav-three-one,
+.subnav-three-one-one,
+.subnav-three-two,
+.subnav-three-two-one,
+.subnav-three-three {
+    list-style-type: none;
+}
+
+#nav>li {
+    display: inline-block;
+}
+
+#nav li {
+    position: relative;
+}
+
+#nav li a {
+    padding: 0 24px;
+    color: #fff;
+    line-height: 46px;
+    text-decoration: none;
+    display: block;
+}
+
+#nav>li:hover>a {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.arrow-down {
+    font-size: 10px;
+    padding: 0px 10px;
+}
+
+
+/* Begin: subnav-one */
+
+#nav .subnav-one,
+#nav .subnav-two {
+    display: none;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.1);
+    min-width: 300px;
+}
+
+#nav li:hover .subnav-one,
+#nav li:hover .subnav-two {
+    display: block;
+}
+
+#nav .subnav-one li:hover a,
+#nav .subnav-two li:hover a {
+    background-color: rgba(255, 255, 255, 0.1);
+    font-size: 17px;
+}
+
+
+/* End: subnav-one */
+
+
+/* subnav-three*/
+
+#nav .subnav-three {
+    display: none;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.1);
+    min-width: 200px;
+}
+
+#nav li:hover .subnav-three {
+    display: block;
+}
+
+#nav .subnav-three>li:hover>a {
+    background-color: rgba(255, 255, 255, 0.1);
+    font-size: 17px;
+}
+
+.arrow-right {
+    font-size: 10px;
+    position: absolute;
+    right: 3px;
+    bottom: 19px;
+}
+
+
+/* subnav-three*/
+
+
+/* Begin: subnav-three-random*/
+
+#nav .subnav-three-two,
+#nav .subnav-three-two-one,
+#nav .subnav-three-one {
+    display: none;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.1);
+    min-width: 210px;
+    left: 200px;
+    top: 0px;
+}
+
+#nav .subnav-three-one-one {
+    display: none;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.1);
+    min-width: 210px;
+    left: 200px;
+    top: -138px;
+}
+
+#nav .subnav-three-three {
+    display: none;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.1);
+    min-width: 210px;
+    left: 200px;
+    top: -92px;
+}
+
+#nav .add-min-width {
+    position: absolute;
+    left: 210px;
+}
+
+.add-width {
+    min-width: 230px;
+    left: 200px;
+    top: 0px;
+}
+
+#nav li:hover .subnav-three li:hover .subnav-three-one,
+#nav li:hover .subnav-three li:hover .subnav-three-one li:hover .subnav-three-one-one,
+#nav li:hover .subnav-three li:hover .subnav-three-two,
+#nav li:hover .subnav-three li:hover .subnav-three-two li:hover .subnav-three-two-one,
+#nav li:hover .subnav-three li:hover .subnav-three-three {
+    display: block;
+}
+
+#nav .subnav-three-one>li:hover>a,
+#nav .subnav-three-one-one>li:hover>a,
+#nav .subnav-three-two>li:hover>a,
+#nav .subnav-three-two-one>li:hover>a,
+#nav .subnav-three-three>li:hover>a {
+    background-color: rgba(255, 255, 255, 0.1);
+    font-size: 17px;
+}
+
+#nav .add-min-width>li:hover>a {
+    min-width: 300px;
+}
+
+
+/* End: subnav-three-random*/
+
+
+/* Begin: slider */
+
+
+/* Begin: Row one */
+
+#slider #apartment {
+    text-align: center;
+    margin-top: 40px;
+    text-transform: uppercase;
+    color: #006633;
+    font-size: 30px;
+}
+
+
+/* Bố cục linh hoạt: ba cột xếp chồng lên nhau thay vì cạnh nhau khi màn hình 
+  có chiều rộng dưới 600px */
+
+@media screen and (max-width: 600px) {
+    #slider .row,
+    #slider .row-two {
+        width: 100%;
+    }
+}
+
+
+/* End: Row one */
+
+#slider .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Begin: Row two */
+
+#slider .row-two {
+    margin-top: 100px;
+}
+
+#slider .row-two .column-two {
+    padding: 0 30px;
+}
+
+#slider .row-two:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#slider .column-two {
+    float: left;
+    width: 33.33333%;
+}
+
+#slider #townhouses {
+    text-align: center;
+    margin-top: 40px;
+    text-transform: uppercase;
+    color: #006633;
+    font-size: 30px;
+}
+
+
+/* The Modal (background) */
+
+#slider .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: black;
+}
+
+
+/* Modal Content */
+
+#slider .modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    width: 90%;
+    max-width: 1200px;
+}
+
+
+/* The Close Button */
+
+#slider .row-two .close {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+#slider .row-two .close:hover,
+#slider .row-two .close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#slider .row-two .my-slides-one {
+    display: none;
+}
+
+#slider .row-two .cursor {
+    cursor: pointer;
+}
+
+
+/* Next & previous buttons */
+
+#slider .row-two .prev,
+#slider .row-two .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+
+/* Position the "next button" to the right */
+
+#slider .row-two .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+
+/* On hover, add a black background color with a little bit see-through */
+
+#slider .row-two .prev:hover,
+#slider .row-two .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+/* Number text (1/3 etc) */
+
+#slider .row-two .heading-townhouses {
+    color: #fff;
+    font-size: 20px;
+    background-color: #135029;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+#slider .row-two .img-first-line {
+    opacity: .7;
+}
+
+#slider .row-two .img-first-line:hover {
+    border: 2px solid #3d8055;
+    opacity: 1;
+}
+
+#slider .row-two .caption-container {
+    text-align: center;
+    background-color: black;
+    padding: 2px 16px;
+    color: white;
+}
+
+#slider .row-two .demo {
+    opacity: 0.6;
+}
+
+#slider .row-two .active,
+#slider .row-two .demo:hover {
+    opacity: 1;
+}
+
+#slider .row-two img.hover-shadow {
+    transition: 0.3s;
+}
+
+
+/* #slider .row-two .hover-shadow:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+} */
+
+
+/* End: Row two */
+
+
+/* Begin: row three */
+
+#slider .row-three #villa {
+    text-align: center;
+    margin-top: 40px;
+    text-transform: uppercase;
+    color: #006633;
+    font-size: 30px;
+}
+
+#slider .row-three .my-slides-three {
+    display: none;
+}
+
+#slider .row-three img {
+    vertical-align: middle;
+}
+
+
+/* Slideshow container */
+
+#slider .row-three .slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+
+/* Caption text */
+
+#slider .row-three .text {
+    color: #FAFAFA;
+    font-size: 20px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+}
+
+
+/* Number text (1/3 etc) */
+
+#slider .row-three .heading-villas {
+    color: #f2f2f2;
+    background-color: #135029;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+
+/* The dots/bullets/indicators */
+
+#slider .row-three .dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+#slider .row-three .active {
+    background-color: #717171;
+}
+
+
+/* Fading animation */
+
+#slider .row-three .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+
+/* On smaller screens, decrease text size */
+
+@media only screen and (max-width: 300px) {
+    #slider .row-three .text {
+        font-size: 11px
+    }
+}
+
+
+/* End: row three */
+
+
+/* Begin: row four */
+
+#slider .row-four #showroom-bar-cafe {
+    text-align: center;
+    margin-top: 40px;
+    text-transform: uppercase;
+    color: #006633;
+    font-size: 30px;
+}
+
+#slider .row-four .my-slides-three {
+    display: none;
+}
+
+#slider .row-four img {
+    vertical-align: middle;
+}
+
+
+/* Slideshow container */
+
+#slider .row-four .slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+
+/* Caption text */
+
+#slider .row-four .text {
+    color: #FAFAFA;
+    font-size: 20px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+}
+
+
+/* Number text (1/3 etc) */
+
+#slider .row-four .heading-showroom-bar-cafe {
+    color: #f2f2f2;
+    background-color: #135029;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+
+/* The dots/bullets/indicators */
+
+#slider .row-four .dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+#slider .row-four .active {
+    background-color: #717171;
+}
+
+
+/* Fading animation */
+
+#slider .row-four .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+
+/* On smaller screens, decrease text size */
+
+@media only screen and (max-width: 300px) {
+    #slider .row-four .text {
+        font-size: 11px
+    }
+}
+
+
+/* End:row four */
+
+
+/* Begin: footer */
+
+.container {
+    max-width: 1170px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#footer {
+    background-color: #135029;
+    padding: 70px 0;
+    margin-top: 100px;
+}
+
+#footer,
+.footer-col ul {
+    list-style-type: none;
+}
+
+.footer-col {
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-col h4 {
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer-col h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer-col ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+    color: #ffffff;
+    font-weight: bolder;
+    padding-left: 8px;
+    font-style: italic;
+}
+
+.footer-col .social-links a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+    color: #24262b;
+    background-color: #ffffff;
+}
+
+
+/* responsive */
+
+@media(max-width: 767px) {
+    .footer-col {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width: 574px) {
+    .footer-col {
+        width: 100%;
+    }
+}
+
+
+/* End: footer */

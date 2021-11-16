@@ -1,0 +1,449 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+body {
+    line-height: 1.5;
+    font-size: 20px;
+}
+
+
+/* Reset CSS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+/* #main {} */
+
+#header {
+    height: 50px;
+    background-color: #135029;
+}
+
+#header:hover,
+#nav .image-logo:hover {
+    height: 300px;
+    width: 100%;
+    background-color: #135029;
+}
+
+#nav {
+    text-transform: uppercase;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 14px;
+}
+
+#nav .logo {
+    float: right;
+}
+
+#nav,
+.subnav-one,
+.subnav-two,
+.subnav-three,
+.subnav-three-one,
+.subnav-three-one-one,
+.subnav-three-two,
+.subnav-three-two-one,
+.subnav-three-three {
+    list-style-type: none;
+}
+
+#nav>li {
+    display: inline-block;
+}
+
+#nav li {
+    position: relative;
+}
+
+#nav li a {
+    padding: 0 24px;
+    color: #fff;
+    line-height: 46px;
+    text-decoration: none;
+    display: block;
+}
+
+#nav>li:hover>a {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.arrow-down {
+    font-size: 10px;
+    padding: 0px 10px;
+}
+
+
+/* Begin: subnav-one */
+
+#nav .subnav-one,
+#nav .subnav-two {
+    display: none;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.1);
+    min-width: 230px;
+}
+
+#nav li:hover .subnav-one,
+#nav li:hover .subnav-two {
+    display: block;
+}
+
+#nav .subnav-one li:hover a,
+#nav .subnav-two li:hover a {
+    background-color: #ddd;
+    color: #000;
+}
+
+
+/* End: subnav-one */
+
+
+/* subnav-three*/
+
+#nav .subnav-three {
+    display: none;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.1);
+    min-width: 200px;
+}
+
+#nav li:hover .subnav-three {
+    display: block;
+}
+
+#nav .subnav-three>li:hover>a {
+    background-color: #ddd;
+    color: #000;
+}
+
+.arrow-right {
+    font-size: 10px;
+    position: absolute;
+    right: 3px;
+    bottom: 19px;
+}
+
+
+/* subnav-three*/
+
+
+/* Begin: subnav-three-random*/
+
+#nav .subnav-three-two,
+#nav .subnav-three-two-one,
+#nav .subnav-three-one {
+    display: none;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.1);
+    min-width: 210px;
+    left: 200px;
+    top: 0px;
+}
+
+#nav .subnav-three-one-one {
+    display: none;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.1);
+    min-width: 210px;
+    left: 200px;
+    top: -138px;
+}
+
+#nav .subnav-three-three {
+    display: none;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.1);
+    min-width: 210px;
+    left: 200px;
+    top: -92px;
+}
+
+#nav .add-min-width {
+    position: absolute;
+    left: 210px;
+}
+
+.add-width {
+    min-width: 230px;
+    left: 200px;
+    top: 0px;
+}
+
+#nav li:hover .subnav-three li:hover .subnav-three-one,
+#nav li:hover .subnav-three li:hover .subnav-three-one li:hover .subnav-three-one-one,
+#nav li:hover .subnav-three li:hover .subnav-three-two,
+#nav li:hover .subnav-three li:hover .subnav-three-two li:hover .subnav-three-two-one,
+#nav li:hover .subnav-three li:hover .subnav-three-three {
+    display: block;
+}
+
+#nav .subnav-three-one>li:hover>a,
+#nav .subnav-three-one-one>li:hover>a,
+#nav .subnav-three-two>li:hover>a,
+#nav .subnav-three-two-one>li:hover>a,
+#nav .subnav-three-three>li:hover>a {
+    background-color: #ddd;
+    color: #000;
+}
+
+
+/* End: subnav-three-random*/
+
+#slider {
+    margin-top: 100px;
+}
+
+#slider #heading-title {
+    text-align: center;
+    margin-top: 40px;
+    text-transform: capitalize;
+    color: #006633;
+    font-size: 30px;
+}
+
+#slider .img-carousel {
+    width: 1110px;
+    height: 555px;
+}
+
+#slider img {
+    vertical-align: middle;
+}
+
+
+/* Position the image container (needed to position the left and right arrows) */
+
+#slider .container {
+    position: relative;
+}
+
+
+/* Hide the images by default */
+
+#slider .my-slides {
+    display: none;
+}
+
+
+/* Add a pointer when hovering over the thumbnail images */
+
+#slider .cursor {
+    cursor: pointer;
+}
+
+
+/* Next & previous buttons */
+
+#slider .prev,
+#slider .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+
+/* Position the "next button" to the right */
+
+#slider .next {
+    right: 0px;
+    border-radius: 3px 0 0 3px;
+}
+
+
+/* On hover, add a black background color with a little bit see-through */
+
+#slider .prev:hover,
+#slider .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+/* Number text (1/3 etc) */
+
+#slider .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+
+/* Container for image text */
+
+#slider .caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+}
+
+#slider .row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* Six columns side by side */
+
+#slider .column {
+    float: left;
+    width: 16.66%;
+}
+
+
+/* Add a transparency effect for thumnbail images */
+
+#slider .demo {
+    opacity: 0.6;
+}
+
+#slider .active,
+#slider .demo:hover {
+    opacity: 1;
+}
+
+
+/* End: slider */
+
+.content-two {
+    padding-top: 30px;
+    text-align: center;
+}
+
+.content-two h1 {
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin-bottom: 1.5rem;
+}
+
+.content-two>p {
+    font-size: 16px;
+    font-weight: 300;
+    color: #4a4a4a;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* Begin: footer */
+
+.container {
+    max-width: 1170px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#footer {
+    background-color: #135029;
+    padding: 70px 0;
+    margin-top: 100px;
+}
+
+#footer,
+.footer-col ul {
+    list-style-type: none;
+}
+
+.footer-col {
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-col h4 {
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer-col h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer-col ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+    color: #ffffff;
+    font-weight: bolder;
+    padding-left: 8px;
+    font-style: italic;
+}
+
+.footer-col .social-links a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+    color: #24262b;
+    background-color: #ffffff;
+}
+
+
+/* responsive */
+
+@media(max-width: 767px) {
+    .footer-col {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width: 574px) {
+    .footer-col {
+        width: 100%;
+    }
+}
+
+
+/* End: footer */

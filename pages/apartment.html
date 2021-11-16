@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LFP - Build Beautiful Houses</title>
+    <link rel="stylesheet" href="/css/apartment.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+
+<body>
+    <div id="main">
+        <div id="header">
+            <ul id="nav">
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="">Dự án</a></li>
+                <li><a href="apartment.html">Thiết kế kiến trúc<i class="arrow-down fas fa-sort-down"></i></a>
+                    <ul class="subnav-one">
+                        <li><a href="#apartment">căn hộ</a></li>
+                        <li><a href="#townhouses">nhà phố</a></li>
+                        <li><a href="#villa">biệt thự</a></li>
+                        <li><a href="#showroom-bar-cafe">Showroom - Bar - Cafe</a></li>
+                    </ul>
+                </li>
+                <li><a href="">báo giá<i class="arrow-down fas fa-sort-down"></i></a>
+                    <ul class="subnav-two">
+                        <li><a href="">tư vấn thiết kế</a></li>
+                        <li><a href="">hạng mục xây dựng</a></li>
+                        <li><a href="">hạng mục nội thất</a></li>
+                    </ul>
+                </li>
+                <li><a href="">nội thất<i class="arrow-down fas fa-sort-down"></i></a>
+                    <ul class="subnav-three">
+                        <li><a href="">phòng khách<i class="arrow-right fas fa-caret-right"></i></a>
+                            <ul class="subnav-three-one">
+                                <li><a href="">bàn trà gỗ</a></li>
+                                <li><a href="">bàn trà sofa</a></li>
+                                <li><a href="">kệ tivi</a></li>
+                                <li><a href="">Sofa<i class="arrow-right fas fa-caret-right"></i></a>
+                                    <ul class="subnav-three-one-one add-min-width add-width-more">
+                                        <li><a href="">Từ 4-9 triệu</a></li>
+                                        <li><a href="">trên 10 triệu</a></li>
+                                        <li><a href="">ghế đơn(Armchair)</a></li>
+                                        <li><a href="">Sofa giường</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="">phòng bếp<i class="arrow-right fas fa-caret-right"></i></a>
+                            <ul class="subnav-three-two">
+                                <li><a href="">bàn ghế ăn<i class="arrow-right fas fa-caret-right"></i></a>
+                                    <ul class="subnav-three-two-one add-min-width">
+                                        <li><a href="" class="add-width">bàn ghế cao cấp</a></li>
+                                        <li><a href="">bàn ghế giá rẻ</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="">tủ bếp</a></li>
+                                <li><a href="">ghế bar</a></li>
+                                <li><a href="">ghế thư giãn</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">phòng ngủ<i class="arrow-right fas fa-caret-right"></i></a>
+                            <ul class="subnav-three-three">
+                                <li><a href="">bàn làm việc</a></li>
+                                <li><a href="">bàn trang điểm</a></li>
+                                <li><a href="">giường ngủ</a></li>
+                                <li><a href="">tủ quần áo</a></li>
+                                <li><a href="">tab đầu giường</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="">liên hệ</a></li>
+                <div class="logo">
+                    <img src="/Images/logo/logo2.jpg" alt="logo" class="image-logo" width="100">
+                </div>
+            </ul>
+        </div>
+
+        <div id="slider">
+            <div class="row center">
+                <div class="col-12-two">
+                    <h1 id="apartment">căn hộ</h1>
+                    <div class="w3-content w3-display-container">
+                        <img class="my-slides" src="/Images/carousel/slider1.jpg" style="width:100%">
+                        <img class="my-slides" src="/Images/carousel/slider2.jpg" style="width:100%;">
+                        <img class="my-slides" src="/Images/carousel/slider3.jpg" style="width:100%">
+                        <img class="my-slides" src="/Images/carousel/slider4.jpg" style="width:100%">
+
+                        <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+                        <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="row-two">
+                <div class="col-12">
+                    <h1 id="townhouses">nhà phố</h1>
+                    <!-- <h2 style="text-align:center">Lightbox</h2> -->
+
+
+                    <div class="column-two">
+                        <img src="/Images/carousel/townhouses1.png" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor img-first-line">
+                    </div>
+                    <div class="column-two">
+                        <img src="/Images/carousel/townhouses2.png" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor img-first-line">
+                    </div>
+                    <div class="column-two">
+                        <img src="/Images/carousel/townhouses3.png" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor img-first-line">
+                    </div>
+
+
+                    <div id="myModal" class="modal">
+                        <span class="close cursor" onclick="closeModal()">&times;</span>
+                        <div class="modal-content">
+
+                            <div class="my-slides-one">
+                                <div class="heading-townhouses">Nhà Phố 1</div>
+                                <img src="/Images/carousel/townhouses1.png" style="width:100%">
+                            </div>
+
+                            <div class="my-slides-one">
+                                <div class="heading-townhouses">Nhà Phố 2</div>
+                                <img src="/Images/carousel/townhouses2.png" style="width:100%">
+                            </div>
+
+                            <div class="my-slides-one">
+                                <div class="heading-townhouses">Nhà Phố 3</div>
+                                <img src="/Images/carousel/townhouses3.png" style="width:100%">
+                            </div>
+
+                            <div class="my-slides-one">
+                                <div class="heading-townhouses">Nhà Phố 4</div>
+                                <img src="/Images/carousel/townhouses4.jpg" style="width:100%">
+                            </div>
+
+                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                            <div class="caption-container">
+                                <p id="caption"></p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row-three">
+                <div class="col-12">
+                    <h1 id="villa">biệt thự</h1>
+
+                    <div class="slideshow-container">
+
+                        <div class="my-slides-three fade">
+                            <div class="heading-villas">1 / 7</div>
+                            <img src="/Images/carousel/villa1.jpg" style="width:100%">
+                            <div class="text">Biệt thự 1</div>
+                        </div>
+
+                        <div class="my-slides-three fade">
+                            <div class="heading-villas">2 / 7</div>
+                            <img src="/Images/carousel/villa2.jpg" style="width:100%">
+                            <div class="text">Biệt thự 2</div>
+                        </div>
+
+                        <div class="my-slides-three fade">
+                            <div class="heading-villas">3 / 7</div>
+                            <img src="/Images/carousel/villa3.jpg" style="width:100%">
+                            <div class="text">Biệt thự 3</div>
+                        </div>
+
+                        <div class="my-slides-three fade">
+                            <div class="heading-villas">4 / 7</div>
+                            <img src="/Images/carousel/villa4.jpg" style="width:100%">
+                            <div class="text">Biệt thự 4</div>
+                        </div>
+
+                        <div class="my-slides-three fade">
+                            <div class="heading-villas">5 / 7</div>
+                            <img src="/Images/carousel/villa5.jpg" style="width:100%">
+                            <div class="text">Biệt thự 5</div>
+                        </div>
+
+                        <div class="my-slides-three fade">
+                            <div class="heading-villas">6 / 7</div>
+                            <img src="/Images/carousel/villa6.jpg" style="width:100%">
+                            <div class="text">Biệt thự 6</div>
+                        </div>
+
+                        <div class="my-slides-three fade">
+                            <div class="heading-villas">7 / 7</div>
+                            <img src="/Images/carousel/villa7.jpg" style="width:100%">
+                            <div class="text">Biệt thự 7</div>
+                        </div>
+
+                    </div>
+                    <br>
+
+                    <div style="text-align:center">
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row-four">
+                <div class="col-12">
+                    <h1 id="showroom-bar-cafe">showroom-bar-cafe</h1>
+                    <div class="slideshow-container">
+
+                        <div class="my-slides-four fade">
+                            <div class="heading-showroom-bar-cafe">1 / 12</div>
+                            <img src="/Images/carousel/showroom1.jpg" style="width:100%">
+                            <div class="text">Showroom 1</div>
+                        </div>
+
+                        <div class="my-slides-four fade">
+                            <div class="heading-showroom-bar-cafe">2 / 12</div>
+                            <img src="/Images/carousel/showroom2.jpg" style="width:100%">
+                            <div class="text">Showroom 2</div>
+                        </div>
+
+                        <div class="my-slides-four fade">
+                            <div class="heading-showroom-bar-cafe">3 / 12</div>
+                            <img src="/Images/carousel/showroom3.jpg" style="width:100%">
+                            <div class="text">Showroom 3</div>
+                        </div>
+
+                        <div class="my-slides-four fade">
+                            <div class="heading-showroom-bar-cafe">4 / 12</div>
+                            <img src="/Images/carousel/showroom4.jpg" style="width:100%">
+                            <div class="text">Showroom 4</div>
+                        </div>
+
+                        <div class="my-slides-four fade">
+                            <div class="heading-showroom-bar-cafe">5 / 12</div>
+                            <img src="/Images/carousel/bar1.jpg" style="width:100%">
+                            <div class="text">Bar 1</div>
+                        </div>
+
+                        <div class="my-slides-four fade">
+                            <div class="heading-showroom-bar-cafe">6 / 12</div>
+                            <img src="/Images/carousel/bar2.jpg" style="width:100%">
+                            <div class="text">Bar 2</div>
+                        </div>
+
+                        <div class="my-slides-four fade">
+                            <div class="heading-showroom-bar-cafe">7 / 12</div>
+                            <img src="/Images/carousel/bar3.png" style="width:100%">
+                            <div class="text">Bar 3</div>
+                        </div>
+
+                        <div class="my-slides-four fade">
+                            <div class="heading-showroom-bar-cafe">8 / 12</div>
+                            <img src="/Images/carousel/bar4.jpg" style="width:100%">
+                            <div class="text">Bar 4</div>
+                        </div>
+
+                        <div class="my-slides-four fade">
+                            <div class="heading-showroom-bar-cafe">9 / 12</div>
+                            <img src="/Images/carousel/cafe1.jpg" style="width:100%">
+                            <div class="text">Cafe Shop 1</div>
+                        </div>
+
+                        <div class="my-slides-four fade">
+                            <div class="heading-showroom-bar-cafe">10 / 12</div>
+                            <img src="/Images/carousel/cafe2.jpg" style="width:100%">
+                            <div class="text">Cafe Shop 2</div>
+                        </div>
+
+                        <div class="my-slides-four fade">
+                            <div class="heading-showroom-bar-cafe">11 / 12</div>
+                            <img src="/Images/carousel/cafe3.jpg" style="width:100%">
+                            <div class="text">Cafe Shop 3</div>
+                        </div>
+
+                        <div class="my-slides-four fade">
+                            <div class="heading-showroom-bar-cafe">12 / 12</div>
+                            <img src="/Images/carousel/cafe4.jpg" style="width:100%">
+                            <div class="text">Cafe Shop 4</div>
+                        </div>
+
+                    </div>
+                    <br>
+                    <div style="text-align:center">
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="content">
+
+        </div>
+
+        <!-- Begin: footer -->
+        <div id="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col">
+                        <h4>công ty</h4>
+                        <ul>
+                            <li><a href="">về chúng tôi</a></li>
+                            <li><a href="">dịch vụ</a></li>
+                            <li><a href="">chính sách bảo mật</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>bản đồ web</h4>
+                        <ul>
+                            <li><a href="/pages/index.html">trang chủ</a></li>
+                            <li><a href="">dự án</a></li>
+                            <li><a href="/pages/apartment.html">thiết kế kiến trúc</a></li>
+                            <li><a href="">báo giá</a></li>
+                            <li><a href="">nội thất</a></li>
+                            <li><a href="">liên hệ</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>follow us</h4>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End: footer -->
+    </div>
+
+
+
+
+    <script>
+        // ======================Begin: Apartment======================
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
+
+        function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("my-slides");
+            if (n > x.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = x.length
+            }
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            x[slideIndex - 1].style.display = "block";
+        }
+        // ======================End: Apartment======================
+
+
+        // ======================Begin: Townhouses======================
+        function openModal() {
+            document.getElementById("myModal").style.display = "block";
+        }
+
+        function closeModal() {
+            document.getElementById("myModal").style.display = "none";
+        }
+
+        // var slideIndex = 1;
+        // showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("my-slides-one");
+            var dots = document.getElementsByClassName("demo");
+            var captionText = document.getElementById("caption");
+            if (n > slides.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = slides.length
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            captionText.innerHTML = dots[slideIndex - 1].alt;
+        }
+        // ======================End: Townhouses======================
+
+        // ======================Begin: Villas======================
+        var slideRowThreeIndex = 0;
+        showRowThreeSlides();
+
+        function showRowThreeSlides() {
+            var i;
+            var slides = document.getElementsByClassName("my-slides-three");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideRowThreeIndex++;
+            if (slideRowThreeIndex > slides.length) {
+                slideRowThreeIndex = 1
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideRowThreeIndex - 1].style.display = "block";
+            dots[slideRowThreeIndex - 1].className += " active";
+            setTimeout(showRowThreeSlides, 2000); // Change image every 2 seconds
+        }
+        // ======================End: Villas======================
+
+
+        // ======================Begin: Showroom-bar-cafe======================
+        var slideRowFourIndex = 0;
+        showRowFourSlides();
+
+        function showRowFourSlides() {
+            var i;
+            var slides = document.getElementsByClassName("my-slides-four");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideRowThreeIndex++;
+            if (slideRowThreeIndex > slides.length) {
+                slideRowThreeIndex = 1
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideRowThreeIndex - 1].style.display = "block";
+            dots[slideRowThreeIndex - 1].className += " active";
+            setTimeout(showRowFourSlides, 2000); // Change image every 2 seconds
+        }
+        // ======================End: Showroom-bar-cafe======================
+    </script>
+</body>
+
+</html>
